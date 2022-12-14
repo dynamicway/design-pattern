@@ -33,4 +33,19 @@ class SingletonTest {
         assertThat(singleton).isEqualTo(newInstance)
     }
 
+    @Test
+    fun breaking_singletons_with_reflection() {
+        val singleton = Singleton.getInstance()
+
+        val newInstance = getNewInstanceByReflection(singleton)
+
+        assertThat(singleton).isNotEqualTo(newInstance)
+    }
+
+    private fun getNewInstanceByReflection(singleton: Singleton): Singleton {
+        val singletonDeclaredConstructor = singleton::class.java.getDeclaredConstructor()
+        singletonDeclaredConstructor.isAccessible = true
+        return singletonDeclaredConstructor.newInstance()
+    }
+
 }
