@@ -22,20 +22,3 @@ build/
 *.iml
 *.ipr
 out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-
-### Genderated Files ###
-src/generated/
-src/querydsl
-src/main/generated/
-jgiven-reports/
