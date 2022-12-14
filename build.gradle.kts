@@ -13,6 +13,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    testImplementation("org.assertj:assertj-core:3.23.1")
 }
 
 tasks.test {
