@@ -25,4 +25,12 @@ class SingletonTest {
         assertThat(singletons).hasSize(1)
     }
 
+    @Test
+    fun one_instance_is_guaranteed() {
+        val singleton = Singleton.getInstance()
+        val newInstance = Singleton.getInstance()
+
+        assertThat(singleton).isEqualTo(newInstance)
+    }
+
 }
