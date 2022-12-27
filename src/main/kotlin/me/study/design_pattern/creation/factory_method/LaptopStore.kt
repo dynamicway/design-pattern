@@ -1,4 +1,4 @@
-package me.study.designpattern.creation.factorymethod
+package me.study.design_pattern.creation.factory_method
 
 class LaptopStore : Store() {
 

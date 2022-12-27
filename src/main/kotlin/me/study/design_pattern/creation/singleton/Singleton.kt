@@ -1,4 +1,4 @@
-package me.study.designpattern.creation.singleton
+package me.study.design_pattern.creation.singleton
 
 class Singleton private constructor() {
     private class SingletonInstanceHolder {

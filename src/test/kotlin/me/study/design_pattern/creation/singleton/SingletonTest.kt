@@ -1,4 +1,4 @@
-package me.study.designpattern.creation.singleton
+package me.study.design_pattern.creation.singleton
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

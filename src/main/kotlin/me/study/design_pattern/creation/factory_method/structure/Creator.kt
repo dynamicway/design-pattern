@@ -1,4 +1,4 @@
-package me.study.designpattern.creation.factorymethod.structure
+package me.study.design_pattern.creation.factory_method.structure
 
 interface Creator {
     fun firstOperation()
