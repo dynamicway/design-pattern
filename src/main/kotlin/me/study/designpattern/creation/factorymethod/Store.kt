@@ -2,11 +2,11 @@ package me.study.designpattern.creation.factorymethod
 
 abstract class Store {
     fun order(): Product {
-        verifyOrder()
+        prepareOrder()
         return getProduct()
     }
 
-    protected abstract fun verifyOrder()
+    protected abstract fun prepareOrder()
 
     abstract fun getOwner(): String
 
