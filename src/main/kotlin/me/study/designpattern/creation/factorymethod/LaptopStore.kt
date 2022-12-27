@@ -2,11 +2,10 @@ package me.study.designpattern.creation.factorymethod
 
 class LaptopStore : Store() {
 
-    private val notebooks = ArrayDeque<Laptop>()
+    private var salesRate = 0
 
     override fun prepareOrder() {
-        if (notebooks.isEmpty())
-            notebooks.add(getProduct())
+        salesRate++
     }
 
     override fun getOwner() = "Notebook owner"
